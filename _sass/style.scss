@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #444444;
+
+
+  header {
+
+  }
+
+main {
+  background-color: #171717;
+  .pic1, .pic2, .pic3 {
+    background-color: red;
+    }
+  }
+}
+
+
+.parallax {
+  background-image: url('../img/ptest1.jpg');
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background: fixed center no-repeat cover;*/
+}
+
+.parallax2 {
+  background-image: url('../img/ptest2.jpg');
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url('../img/ptest3.jpg');
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
