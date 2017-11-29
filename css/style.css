@@ -1,12 +1,54 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #444444; }
+  background-color: #171717;
+  margin: 0; }
+  body img {
+    max-width: 100%; }
+  body h1, body h2, body h3 {
+    color: #ffc526;
+    font-family: 'Raleway', sans-serif; }
+  body p, body h4 {
+    /*Brødtekst og projekttype*/
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0.3em 2.5% 0.5em; }
+  body header h1 {
+    /*Kalle Hansen */
+    text-align: center;
+    font-size: 2.9em; }
   body main {
-    background-color: #171717; }
-    body main .pic1, body main .pic2, body main .pic3 {
-      background-color: red; }
+    background-color: black; }
+    body main h2 {
+      /*Projekter + Fotografier*/
+      text-align: center;
+      font-size: 2em;
+      padding: 0.8em;
+      margin: 0 2.5%; }
+    body main h3 {
+      /*Projektnavne*/
+      margin: 0.2em 2.5%; }
+    body main p {
+      margin-bottom: 1.5em; }
+    body main .projects button {
+      margin: 0.3em 2.5% 0.5em;
+      display: inline-block;
+      float: right; }
+    body main .projects .Pro1, body main .projects .Pro2, body main .projects .Pro3, body main .projects .Pro4 {
+      /*Projekter på forsiden*/
+      width: 100%; }
+      body main .projects .Pro1 .imgtext, body main .projects .Pro2 .imgtext, body main .projects .Pro3 .imgtext, body main .projects .Pro4 .imgtext {
+        margin: 0;
+        display: inline-block; }
+    @media screen and (min-width: 800px) {
+      body main .Projects {
+        display: flex;
+        flex-wrap: wrap; }
+      body main .Pro1, body main .Pro2, body main .Pro3, body main .Pro4 {
+        width: 48%;
+        margin: 1%; } }
 
 .parallax {
   background-image: url("../img/ptest1.jpg");
