@@ -111,8 +111,8 @@ body {
 }
 
 .parallax {
-  background-image: url('../img/ptest1.jpg');
-  height: 500px;
+  background-image: url('../img/ommig/ommig1.jpg');
+  height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,8 +121,8 @@ body {
 }
 
 .parallax2 {
-  background-image: url('../img/ptest2.jpg');
-  height: 500px;
+  background-image: url('../img/ommig/ommig2.jpg');
+  height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -130,8 +130,26 @@ body {
 }
 
 .parallax3 {
-  background-image: url('../img/ptest3.jpg');
-  height: 500px;
+  background-image: url('../img/ommig/ommig3.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  background-image: url('../img/ommig/ommig4.jpg');
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax5 {
+  background-image: url('../img/ommig/ommig5.jpg');
+  height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
