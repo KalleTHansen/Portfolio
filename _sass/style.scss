@@ -52,7 +52,7 @@ body {
       margin: 0.3em 2.5% 0.5em;
       transition: background-color 0.3s;
       background-color: $accentcolour;
-      transition: color 0.5s;
+      transition: color 0.3s;
       color: black;
       font-family: $maintext;
       font-size: 1.25em;
@@ -63,6 +63,7 @@ body {
       &:hover {
         background-color: $backgroundcolour;
         color: $accentcolour;
+        cursor:pointer;
       }
     }
 
