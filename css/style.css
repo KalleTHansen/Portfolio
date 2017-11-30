@@ -3,8 +3,10 @@
   box-sizing: border-box; }
 
 body {
-  background-color: #171717;
+  background-color: black;
   margin: 0; }
+  body a {
+    color: #ffc526; }
   body img {
     max-width: 100%; }
   body h1, body h2, body h3 {
@@ -15,10 +17,26 @@ body {
     color: white;
     font-family: "Source Sans Pro", sans-serif;
     margin: 0.3em 2.5% 0.5em; }
-  body header h1 {
-    /*Kalle Hansen */
-    text-align: center;
-    font-size: 2.9em; }
+  body header {
+    margin: 0;
+    padding: 0; }
+    body header h1 {
+      /*Kalle Hansen */
+      text-align: center;
+      font-size: 2.9em;
+      margin: 5%; }
+    body header .headertext {
+      position: relative; }
+    body header h2, body header h3 {
+      position: absolute; }
+    body header #designer {
+      left: 3px; }
+    body header #fotograf {
+      right: 8px; }
+    body header #forehead {
+      top: 83%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
   body main {
     background-color: black; }
     body main h2 {
@@ -72,6 +90,51 @@ body {
 .single-pro li {
   color: white;
   font-family: "Source Sans Pro", sans-serif; }
+
+.galleri {
+  /*Både billeder og knapper i galleri*/
+  position: relative;
+  /*Tillader placering af knapper oven på billeder*/ }
+  .galleri .mySlides {
+    /*Billeder i slideshow*/
+    width: 100%; }
+  .galleri button {
+    /*Pile i galleri*/
+    background-color: rgba(0, 0, 0, 0.4);
+    /*Sort farve med 40% opacity*/
+    font-size: 4vw;
+    /*4% af viewport width*/
+    color: white;
+    border: none;
+    padding: 3vw;
+    /*Både padding og pilens størrelse skalerer efter bredde*/
+    position: absolute;
+    /*Tillader placering af knapper oven på billeder*/
+    outline: none; }
+  .galleri .w3-display-right {
+    /*Knap til at vise næste billede i slideshow*/
+    right: 0;
+    /*Afstanden fra højre kant af kassen skal være 0*/ }
+
+.linktoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .linktoimg .morepics {
+    /*Knap til flere billeder*/
+    margin: 0.3em 2.5% 0.5em;
+    transition: background-color 0.3s;
+    background-color: #ffc526;
+    transition: color 0.3s;
+    color: black;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.25em;
+    border: none;
+    outline: none; }
+    .linktoimg .morepics:hover {
+      background-color: #171717;
+      color: #ffc526;
+      cursor: pointer; }
 
 .parallax {
   background-image: url("../img/ommig/ommig1.jpg");

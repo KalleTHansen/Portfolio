@@ -5,9 +5,13 @@
 }
 
 body {
-  background-color: $backgroundcolour;
+  background-color: black;
   margin: 0;
 
+  a {
+    color: $accentcolour;
+  }
+  
   img {
     max-width: 100%;
   }
@@ -24,11 +28,33 @@ body {
   }
 
   header {
+    margin: 0;
+    padding: 0;
     h1 { /*Kalle Hansen */
       text-align: center;
       font-size: 2.9em;
+      margin: 5%;
     }
-  }
+    .headertext {
+      position: relative;
+      }
+
+      h2, h3 {
+        position: absolute;
+      }
+
+      #designer {
+        left: 3px;
+      }
+      #fotograf {
+        right: 8px;
+      }
+      #forehead {
+        top: 83%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
 
   main {
     background-color: black;
@@ -107,6 +133,53 @@ body {
   li {
     color: white;
     font-family: $maintext;
+  }
+}
+
+  .galleri { /*Både billeder og knapper i galleri*/
+    position: relative; /*Tillader placering af knapper oven på billeder*/
+
+
+  .mySlides { /*Billeder i slideshow*/
+    width:100%;
+  }
+
+  button { /*Pile i galleri*/
+    background-color: rgba(0,0,0,0.4); /*Sort farve med 40% opacity*/
+    font-size: 4vw; /*4% af viewport width*/
+    color: white;
+    border: none;
+    padding: 3vw; /*Både padding og pilens størrelse skalerer efter bredde*/
+    position: absolute; /*Tillader placering af knapper oven på billeder*/
+    outline:none;
+  }
+
+  .w3-display-right { /*Knap til at vise næste billede i slideshow*/
+    right: 0; /*Afstanden fra højre kant af kassen skal være 0*/
+  }
+}
+
+.linktoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.morepics { /*Knap til flere billeder*/
+  margin: $textmargin;
+  transition: background-color 0.3s;
+  background-color: $accentcolour;
+  transition: color 0.3s;
+  color: black;
+  font-family: $maintext;
+  font-size: 1.25em;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color: $backgroundcolour;
+    color: $accentcolour;
+    cursor:pointer;
+    }
   }
 }
 

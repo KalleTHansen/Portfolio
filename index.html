@@ -21,10 +21,12 @@
 <body>
   <header>
     <h1>Kalle Hansen</h1>
-    <h2>Designer</h2>
-    <img src="img/edge.png" alt="Mig">
-    <h2>Fotograf</h2>
-
+    <div class="headertext">
+      <h2 id="designer">Designer</h2>
+      <h2 id="fotograf">Fotograf</h2>
+      <a href="ommig.html"> <h3 id="forehead">Om mig</h3></a>
+      <img src="img/mig-kant.jpg" alt="Mig">
+    </div>
   </header>
 
   <main>
@@ -82,10 +84,45 @@
 
   <section>
     <h2>Fotografier</h2>
+    <div class=galleri> <!--Knapper til at skifte billede-->
+    <button class="w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 
-    <a href="https://www.500px.com/kalleh98" target="_blank"> <button type="button">Flere billeder</button></a>
+    <img class="mySlides" src="img/slide1.jpg"> <!--Billeder til galleriet-->
+    <img class="mySlides" src="img/slide2.jpg">
+    <img class="mySlides" src="img/slide3.jpg">
+    <img class="mySlides" src="img/slide4.jpg">
+    <img class="mySlides" src="img/slide5.jpg">
+    <img class="mySlides" src="img/slide6.jpg">
+    <img class="mySlides" src="img/slide7.jpg">
+    </div>
+
+    <div class="linktoimg">
+    <a href="https://www.500px.com/kalleh98" target="_blank" > <button type="button" class="morepics">Flere billeder</button></a>
+    </div>
+
   </section>
 
   </main>
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) { /*Læg en til variablen, når der trykkes på pil højre*/
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1} /*Hvis n er større end antallet af billeder, vælges billede 1*/
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  </script>
 </body>
 </html>
