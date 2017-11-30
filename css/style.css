@@ -110,6 +110,9 @@ body {
   padding: 0; }
   .timeline h1, .timeline h2, .timeline h3, .timeline h4, .timeline h5, .timeline h6 {
     line-height: inherit; }
+  .timeline h3 {
+    margin-top: 0;
+    /*Correctly aligns with timeline dots*/ }
 
 /*----- TIMELINE ITEM -----*/
 .timeline-item {
