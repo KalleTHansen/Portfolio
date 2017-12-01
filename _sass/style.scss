@@ -6,7 +6,9 @@
 
 body {
   background-color: black;
-  margin: 0;
+  margin: auto;
+  max-width: 900px;
+
 
   a {
     color: $accentcolour;
@@ -173,7 +175,7 @@ body {
 
   button { /*Pile i galleri*/
     background-color: rgba(0,0,0,0.4); /*Sort farve med 40% opacity*/
-    font-size: 4vw; /*4% af viewport width*/
+    font-size: 4vmin; /*4% af viewport width*/
     color: white;
     border: none;
     padding: 3vw; /*Både padding og pilens størrelse skalerer efter bredde*/
