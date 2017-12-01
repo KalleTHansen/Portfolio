@@ -20,6 +20,8 @@ body {
   body header {
     margin: 0;
     padding: 0; }
+    body header a {
+      text-decoration: none; }
     body header h1 {
       /*Kalle Hansen */
       text-align: center;
@@ -90,6 +92,8 @@ body {
 .single-pro li {
   color: white;
   font-family: "Source Sans Pro", sans-serif; }
+.single-pro iframe {
+  width: 100%; }
 
 .galleri {
   /*Både billeder og knapper i galleri*/
@@ -98,6 +102,13 @@ body {
   .galleri .mySlides {
     /*Billeder i slideshow*/
     width: 100%; }
+    .galleri .mySlides img {
+      /*Removes blue selection*/
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none; }
   .galleri button {
     /*Pile i galleri*/
     background-color: rgba(0, 0, 0, 0.4);
